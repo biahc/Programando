@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+:root {
+  --hue: 159;
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+}
+body {
+  background: var(--body-color);
+  font: 400 1rem 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h2 {
+  font: 700 1.8rem 'Roboto', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+main {
+  margin-top: 6.5rem;
+}
+#header {
+  border-bottom: 2px solid var(--base-color-second);
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background: var(--body-color);
+}
+.container {
+  margin: 0 1.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font: 700 2rem 'Roboto', sans-serif;
+  color: var(--title-color);
+}
+.section {
+  padding: 5rem 0;
+}
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.image {
+  margin-right: 40%;
+  margin-left: -1.5rem;
+}
+#home .image {
+  position: relative;
+}
+#home .image img {
+  border-radius: 0.75rem;
+}
+#home .image::before {
+  content: '';
+  height: 100%;
+  width: 130%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -20%;
+  left: 20%;
+  z-index: -1;
+  border-radius: 0.75rem;
+}
+#home .text {
+  text-align: center;
+}
+#home .text h2 {
+  margin-bottom: 1rem;
+}
+#home .text p {
+  margin-bottom: 2rem;
+}
+.button {
+  background: var(--base-color);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.75rem;
+  font: 500 1.2rem 'Open Sans', sans-serif;
+  transition-delay: background 0.3s;
+}
+.button:hover {
+  background: var(--base-color-alt);
+}
+.divider-1 {
+  height: 2px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
+}
