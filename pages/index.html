@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programando</title>
+    <link rel="stylesheet" href="assets/fonts/style.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,12 +17,22 @@
     <header id="header">
       <nav class="container">
         <a class="logo" href="#">Programando</a>
-        <div class="menu">...</div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu">menu</div>
+        <div class="toggle icon-cancel-circle">X</div>
       </nav>
     </header>
     <main>
-      <section class="section" id="home">
-        <div class="container grid">
+      <div class="container grid">
+          <section class="section" id="home">
           <div class="image">
             <img
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
@@ -29,7 +40,8 @@
             />
           </div>
           <div class="text">
-            <h2>Seja bem-vindo ao Programando</h2>
+            <h2 class="title">Seja bem-vindo ao Programando</h2>
+            <div class="icon-menu"></div>
             <p>
               Olá, contruí este site para treinar meu aprendizado em programação.
               Vou compartilhar por aqui o que e como estou aprendendo. Seja muito
@@ -40,21 +52,53 @@
         </div>
       </section>
       <div class="divider-1"></div>
-      <section class="section">
+      <section class="section" id="about">
         <div class="container grid">
-          <p>section 2</p>
+          <div class="image">
+            <img  
+              src="https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 
+              alt="Frase: 'Do what is great' escrito no monitor">
+          </div>
+          <div class="text"></div>
+            <h2>Sobre</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illum ab consequatur, libero, ad dolorem temporibus similique beatae accusantium nostrum sed nemo hic voluptas veritatis doloremque aliquid repellat eum. Dolore.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reprehenderit possimus deleniti vitae ut explicabo porro aut sapiente repellendus, magnam aperiam laborum aliquid corporis ex magni. Magnam architecto totam perferendi.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic porro labore sed animi tempora voluptate quia eius accusantium adipisci dignissimos eos nostrum beatae ea, iusto culpa tenetur corrupti enim recusandae!
+            </p>
         </div>
       </section>
-      <section class="section">
+      <div class="divider-2"></div>
+      <section class="section" id="services">
         <div class="container grid">
           <p>section 3</p>
+          <header>
+            <h2>Tecnologias/Ferramentas/Linguagens</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta pariatur aut iure impedit accusamus ratione officia, incidunt culpa voluptatibus vel. Ullam ducimus unde natus commodi error eos, neque esse.</p>
+          </header>
+          <div class="card grid">
+            <i class="icon-html-five"></i>
+            <h3 class="title">HTML</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repudiandae, similique nulla voluptas temporibus iste, recusandae consequatur distinctio natus, adipisci asperiores sequi voluptate. Autem quidem a vero. Nemo, consequatur iure?</p>
+          </div>
+          <div class="card grid">
+            <i class="icon-css3"></i>
+            <h3 class="title">CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repudiandae odit nihil ad reprehenderit amet quibusdam optio, dolorem necessitatibus obcaecati quisquam blanditiis aperiam similique, quo placeat? Cumque natus ab autem.</p>
+          </div>
+          <div class="card grid">
+            <i class="icon-file-text2"></i>
+            <h3 class="title">JS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit id quisquam ex, accusamus dicta modi. Molestiae provident quidem, eaque perspiciatis tempora sit quae eum consequuntur optio accusantium, quis iste.</p>
+          </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="testimonials">
         <div class="container grid">
           <p>section 4</p>
       </section>
-      <section class="section">
+      <section class="section" id="contact">
         <div class="container grid">
           <p>section 5</p>
       </section>
@@ -62,5 +106,6 @@
     <footer>
       <p>Footer</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
